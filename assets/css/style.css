@@ -1,0 +1,777 @@
+@charset "UTF-8";
+
+@font-face {
+  src: url('https://use.typekit.net/kxj5kcn.css');
+  font-family: "winco", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  src: url('https://use.typekit.net/kxj5kcn.css');
+  font-family: "winco", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  src: url('https://use.typekit.net/kxj5kcn.css');
+  font-family: "nove", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  src: url('https://use.typekit.net/kxj5kcn.css');
+  font-family: "bitcount-mono-single-circle", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  src: url('https://use.typekit.net/kxj5kcn.css');
+  font-family: "bitcount-mono-single-circle", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  src: url('https://use.typekit.net/kxj5kcn.css');
+  font-family: "bitcount-mono-single-circle", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+@font-face {
+  src: url('https://use.typekit.net/kxj5kcn.css');
+  font-family: "monsal-gothic", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  src: url('https://use.typekit.net/kxj5kcn.css');
+  font-family: "monsal-gothic", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  src: url('https://use.typekit.net/kxj5kcn.css');
+  font-family: "monsal-gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  src: url('https://use.typekit.net/kxj5kcn.css');
+  font-family: "monsal-gothic", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  src: url('https://use.typekit.net/kxj5kcn.css');
+  font-family: "monsal-gothic", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  src: url('https://use.typekit.net/kxj5kcn.css');
+  font-family: "monsal-gothic", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+
+
+
+.italic {
+  font-family: "monsal-gothic";
+  font-weight: 400;
+  font-style: italic;
+}
+
+:root {
+  --font-size: 19px;
+  --font-family: "monsal-gothic";
+}
+
+
+
+html {
+  /* font: var(--font-size) var(--font-family); */
+  font-size: var(--font-size);
+  color: var(--color-text);
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  background-color: var(--color-background);
+
+  font: var(--font-size) var(--font-family);
+  font-size: inherit;
+  color: var(--color-text);
+  height: auto;
+  overflow-y: auto;
+  margin: 0;
+}
+
+
+
+
+
+
+/* txt style */
+
+h1 {
+  text-align: center;
+  font-size: 10rem;
+  font-family: "nove";
+  font-weight: 900;
+  line-height: 1;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #ffae00;
+}
+
+h3 {
+  font-size: 1.3rem;
+  margin: 1rem 0;
+  color: #ffae00;
+}
+
+p {
+  line-height: 1.3;
+  margin-bottom: 0;
+}
+
+
+
+
+
+
+
+/* first page */
+
+.title {
+  position: sticky;
+  z-index: -2;
+  height: 100vh;
+  top: 0;
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+
+  background-color: #ffbb00;
+  color: white;
+}
+
+.title h1 {
+  padding: 0 10vw;
+}
+
+.title-landing {
+  text-align: center;
+}
+
+
+
+
+
+/* second page */
+
+.second-page {
+  position: sticky;
+  z-index: -1;
+  height: 100vh;
+  top: 0;
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+
+  background-color: white;
+}
+
+.second-page p {
+  color: black;
+  padding: 0 20vw;
+
+  font-size: 25px;
+}
+
+#abstract-text {
+  font-style: italic;
+}
+
+
+
+
+
+
+
+/* third */
+
+.box {
+  max-width: 100vw;
+  background-color: white;
+  padding: 2rem 0;
+}
+
+
+.table {
+  position: sticky;
+  top: 0;
+  left: 0;
+  /* background-color: white; */
+  width: 31vw;
+  z-index: 4;
+  padding: 1rem 0 1rem 1.5rem;
+}
+
+.m-table {
+  display: none;
+}
+
+.table-list {
+  left: 1rem;
+  color: white;
+}
+
+
+/* navigation */
+
+nav {
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  text-decoration: none;
+
+  line-height: 1.3;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav ul a:hover {
+  text-decoration: none;
+  font-weight: bold;
+
+}
+
+li,
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container-intro {
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+  width: 100%;
+  height: auto;
+
+  display: block;
+  background: linear-gradient(to right,
+      #ffbb00 0%,
+      #ffbb00 20%,
+      white 20%,
+      white 100%);
+}
+
+.container-1,
+.container-2,
+.container-4 {
+  width: 100%;
+  height: auto;
+
+  display: block;
+  background: linear-gradient(to right,
+      #ffbb00 0%,
+      #ffbb00 20%,
+      white 20%,
+      white 100%);
+  padding: 2rem 0;
+}
+
+.container-con {
+  width: 100%;
+  height: auto;
+
+  display: block;
+  background: linear-gradient(to right,
+      #ffbb00 0%,
+      #ffbb00 20%,
+      white 20%,
+      white 100%);
+  padding-top: 2rem;
+  padding-bottom: 15rem;
+}
+
+/* .chpt1-h2{
+  font-family: "bitcount-mono-single-circle";
+  font-weight: 600;
+  font-size: 1.5rem;
+} */
+
+
+.thesis-tekst {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 5vw;
+  row-gap: 0;
+  padding: 0 9vw 0 23vw;
+
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+
+
+
+.fig {
+  margin-left: 2rem;
+  margin-top: 1.5rem;
+}
+
+.side-fig {
+  /* width: 25vw; */
+  max-width: 100%;
+  height: auto;
+}
+
+.fig-txt {
+  font-size: 0.8rem;
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 1rem;
+}
+
+
+.s-fig {
+  margin-left: 2rem;
+  margin-top: 1.5rem;
+}
+
+.m-fig {
+  display: none;
+}
+
+.m-txt {
+  display: none;
+}
+
+
+
+
+
+
+.footnote {
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.footnote-number {
+  display: inline-block;
+  width: 0.8rem;
+  height: 0.8rem;
+  line-height: 0.3rem;
+
+  /* text-align: center;
+  font-size: 0.75rem;
+  background-color: #000000;
+  color: rgba(255, 255, 255, 0);
+  border-radius: 50%;
+  vertical-align: super; */
+
+  /* background-color: #308aff77; */
+  background-color: #ffd25f;
+  border-radius: 50%;
+  transform: rotate(45deg);
+
+  margin-left: 0.1rem;
+  margin-right: 0.3rem;
+}
+
+.footnote-number-rec {
+  display: inline-block;
+  width: 0.8rem;
+  height: 0.8rem;
+  line-height: 0.3rem;
+
+  /* text-align: center;
+  font-size: 0.75em;
+  background-color: #000000;
+  color: rgba(255, 255, 255, 0);
+  vertical-align: super;
+  margin-left: 0.1rem;
+  */
+
+  background-color: #ffd25f;
+  transform: rotate(45deg);
+
+  margin-left: 0.1rem;
+  margin-right: 0.3rem;
+
+}
+
+.footnote-number-tri {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  line-height: 0.3rem;
+
+  border-left: 0.5rem solid transparent;
+  border-right: 0.5rem solid transparent;
+  /* border-bottom: 0.6rem solid rgba(0, 194, 74, 0.686); */
+  border-bottom: 0.75rem solid #ffd25f;
+
+  position: relative;
+  transform: rotate(45deg);
+
+  margin-left: 0.1rem;
+  margin-right: 0.4rem;
+
+}
+
+
+
+
+.footnote-popup {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  left: -150%;
+  top: 100%;
+
+  word-wrap: break-word;
+  /* 텍스트가 넘칠 때 줄 바꿈 처리 */
+  white-space: normal;
+
+  transform: translateY(-0.5rem);
+  padding: 0.1rem 0.5rem;
+
+
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+
+  width: max-content;
+  max-width: 11rem;
+  z-index: 10;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+
+  font-size: 0.8rem;
+}
+
+/* hover 또는 focus로 보여주기 */
+.footnote:hover .footnote-popup,
+.footnote:focus .footnote-popup {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
+
+
+/* last */
+
+.bibiliography {
+  z-index: 5;
+  background-color: white;
+  padding: 0 2rem;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+  margin: 0;
+
+  overflow-x: visible;
+
+  word-break: break-word;
+  overflow-wrap: break-word;
+
+
+  font-size: 0.8rem;
+}
+
+.bibiliography li {
+  line-height: 1.6;
+  text-indent: -3rem;
+  padding-left: 3rem;
+
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+
+
+
+
+.last {
+  background-color: white;
+  z-index: 5;
+
+  margin: 0 0 1rem 0;
+  padding: 2rem 0;
+
+  text-align: center;
+  line-height: 1;
+
+  font-size: 0.8rem;
+}
+
+
+
+
+
+
+@media (max-width: 1390px) and (min-width: 1300px) {
+  /* :root {
+    --font-size: 20px;
+  } */
+  /* 
+  html,
+  body {
+    font: var(--font-size) var(--font-text);
+  } */
+
+  h1 {
+    font-size: 9.8rem;
+  }
+}
+
+@media (max-width: 1300px)and (min-width: 1100px) {
+
+
+
+  h1 {
+    font-size: 9.3rem;
+  }
+}
+
+@media (max-width: 1100px) and (min-width: 810px) {
+
+  h1 {
+    font-size: 8.8rem;
+  }
+}
+
+@media (max-width: 810px) and (min-width: 600px) {
+
+
+  h1 {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 600px) and (min-width: 450px) {
+
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 450px) and (min-width: 300px) {
+
+
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 300px) and (min-width: 200px) {
+
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 200px) {
+
+  h1 {
+    font-size: 1rem;
+  }
+
+}
+
+
+
+
+
+/* mobile */
+
+@media (max-width: 850px) {
+
+
+  :root {
+    --font-size: 18px;
+  }
+
+  .second-page p {
+    font-size: 18px;
+    padding: 0 4rem;
+  }
+
+  .table {
+    display: none;
+  }
+
+  .m-table {
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    width: 100%;
+    /* padding: 0 2rem; */
+    justify-content: center;
+    align-items: center;
+
+    background-color: #ffbb00;
+  }
+
+  .m-table-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .m-table-list li {
+    padding: 0.5rem 1rem;
+    color: white;
+  }
+
+
+  .box {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+  }
+
+  .container-intro {
+    padding-top: 8rem;
+    padding-bottom: 2rem;
+    width: 100%;
+    height: auto;
+
+    display: block;
+    background: white;
+  }
+
+  .container-1,
+  .container-2,
+  .container-4,
+  .container-con {
+    width: 100%;
+    height: auto;
+
+    display: block;
+    background: white;
+    padding: 2rem 0;
+  }
+
+  .thesis-tekst {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 2rem;
+
+    padding: 1rem;
+  }
+
+
+
+  .txt {
+    padding: 0 2rem;
+  }
+
+  .s-txt {
+    display: none;
+  }
+
+  .m-txt {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+  }
+
+
+
+
+  .fig {
+    margin-left: 0;
+    margin-top: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .s-fig {
+    display: none;
+  }
+
+  .m-fig {
+    margin-left: 0;
+    margin-top: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+
+
+  .side-fig {
+    width: 60vw;
+    height: auto;
+  }
+
+  .fig-txt {
+    font-size: 0.8rem;
+    padding-bottom: 1rem;
+    margin: 1rem 3rem 0rem 3rem;
+  }
+
+  .s-footnotes {
+    display: none;
+  }
+
+  .m-footnotes {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .bibiliography {
+    padding-top: 15rem;
+  }
+
+
+}

@@ -1,0 +1,67 @@
+html {
+    line-height: 1.15; /* 기본 줄 간격 설정 */
+    -webkit-text-size-adjust: 100%; /* iOS에서 텍스트 크기 조정 방지 */
+}
+
+body {
+    margin: 0; /* 기본 여백 제거 */
+}
+
+h1 {
+    font-size: 2em; /* 기본 폰트 크기 설정 */
+    margin: .67em 0; /* 상하 마진 */
+}
+
+hr {
+    box-sizing: content-box; /* 내용 크기에만 박스 크기 적용 */
+    height: 0; /* 높이 제거 */
+    overflow: visible; /* 넘치는 콘텐츠 표시 */
+}
+
+pre {
+    font-family: monospace, monospace; /* 고정폭 글꼴 */
+    font-size: 1em; /* 기본 폰트 크기 */
+}
+
+a {
+    background-color: transparent; /* 배경색 제거 */
+}
+
+b, strong {
+    font-weight: bolder; /* 더 굵게 설정 */
+}
+
+small {
+    font-size: 80%; /* 폰트 크기 줄임 */
+}
+
+/* 위첨자와 아래첨자 */
+
+sub, sup {
+    font-size: 75%; /* 폰트 크기 줄임 */
+    line-height: 0; /* 줄 간격 제거 */
+    position: relative; /* 상대적인 위치 설정 */
+    vertical-align: baseline; /* 텍스트 기준선에 맞춤 */
+}
+sub {
+    bottom: -.25em; /* 아래로 이동 */
+}
+sup {
+    top: -.5em; /* 위로 이동 */
+}
+
+button, input, optgroup, select, textarea {
+    font-family: inherit; /* 부모의 폰트 스타일 상속 */
+    font-size: 100%; /* 폰트 크기 초기화 */
+    line-height: 1.15; /* 줄 간격 초기화 */
+    margin: 0; /* 마진 초기화 */
+}
+
+[type="checkbox"], [type="radio"] {
+    box-sizing: border-box; /* 박스 크기 초기화 */
+    padding: 0; /* 안쪽 여백 제거 */
+}
+
+[hidden] {
+    display: none; /* 숨긴 요소는 화면에서 제거 */
+}
