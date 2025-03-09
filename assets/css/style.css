@@ -711,7 +711,11 @@ ol {
 
 
   .txt {
+<<<<<<< HEAD
     padding: 0 1vw;
+=======
+    padding: 0;
+>>>>>>> 44fed9d9a82f4c5082682f6c6357829113d28ac8
   }
 
   .s-txt {
