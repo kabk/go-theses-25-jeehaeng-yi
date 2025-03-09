@@ -637,11 +637,12 @@ ol {
   }
 
   .m-table {
+    /* padding: 0.5rem 1rem; */
     display: flex;
     position: sticky;
     top: 0;
     z-index: 3;
-    width: 100%;
+    width: 100vw;
     /* padding: 0 2rem; */
     justify-content: center;
     align-items: center;
@@ -657,7 +658,7 @@ ol {
   }
 
   .m-table-list li {
-    padding: 0.5rem 1rem;
+    padding: 3vw 2vw;
     color: white;
   }
 
@@ -714,7 +715,7 @@ ol {
   .m-txt {
     display: flex;
     flex-direction: column;
-    padding: 0 2rem;
+    padding: 0;
   }
 
 
@@ -756,7 +757,7 @@ ol {
   .fig-txt {
     font-size: 0.8rem;
     padding-bottom: 1rem;
-    margin: 1rem 3rem 0rem 3rem;
+    margin: 1rem 3vw 0rem 3vw;
   }
 
   .s-footnotes {
